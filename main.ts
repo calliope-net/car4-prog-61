@@ -3,12 +3,10 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     car4sender.programmSchritt(50, 150, cm),
     null,
     null,
-    car4sender.programmSchrittT(-40, 8, cm),
+    car4sender.programmSchrittT(-40, 6, cm),
     null
     )
-    car4sender.sendBuffer0_setBit(car4sender.eBufferBit.x80_MotorPower, true)
-    car4sender.sendBuffer0_setBit(car4sender.eBufferBit.fahrenStrecke, true)
-    car4sender.sendBuffer19()
+    car4sender.sendProgramm19()
     basic.showString("A")
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
@@ -17,11 +15,9 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     car4sender.programmSchritt(80, 30, cm),
     car4sender.programmSchritt(-80, 30, cm),
     car4sender.programmSchritt(100, 150, cm),
-    car4sender.programmSchritt(100, 150, 29)
+    car4sender.programmSchritt(100, 150, cm)
     )
-    car4sender.sendBuffer0_setBit(car4sender.eBufferBit.x80_MotorPower, true)
-    car4sender.sendBuffer0_setBit(car4sender.eBufferBit.fahrenStrecke, true)
-    car4sender.sendBuffer19()
+    car4sender.sendProgramm19()
     basic.showString("B")
 })
 input.onButtonEvent(Button.A, input.buttonEventValue(ButtonEvent.Hold), function () {

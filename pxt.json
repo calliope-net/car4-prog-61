@@ -4,7 +4,7 @@
     "dependencies": {
         "core": "*",
         "v1": "*",
-        "car4-sender": "github:calliope-net/car4-sender#v0.0.3"
+        "car4-sender": "github:calliope-net/car4-sender#v0.0.4"
     },
     "files": [
         "main.blocks",
