@@ -26,3 +26,4 @@ function Konfiguration () {
     car4sender.comment("calliope-net/car4-sender")
 }
 car4sender.beimStart(240)
+basic.showString("CaR 4")
